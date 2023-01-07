@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+# Change Directories
+alias .1='cd ..'
+alias .2='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
+
+alias ..='cd ..'         # Go up one directory
+alias cd..='cd ..'       # Common misspelling for going up one directory
+alias ...='cd ../..'     # Go up two directories
+alias ....='cd ../../..' # Go up three directories
+alias -- -='cd -'        # Go back
+
+# Shortcuts
+alias etc="cd /data/data/com.termux/usr/etc"
+alias dot="cd /data/data/com.termux/files/home/dotfiles"
+
+
+# List commands
+alias l="ls --color=auto"
+alias l='ls -lAh --color=auto'
+alias ls="ls -a --color=auto"
+alias la="ls -a --color=auto"
+alias ll="ls -al --color=auto"
+
+# other
+alias c="clear"
+
+# Exit Command
+alias :q='exit'
+alias ext='exit'
+alias quit='exit'
+
+#Confirmation
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
+alias rm='rm -I –preserve-root'
+alias cpv='rsync -ah --info=progress2'
+
+alias grep='grep --color=auto'
+
+# update on one command
+alias update='sudo apt-get update && sudo apt-get upgrade'
+
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
+
