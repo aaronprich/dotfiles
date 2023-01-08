@@ -47,6 +47,12 @@ alias grep='grep --color=auto'
 # update on one command
 alias update='sudo apt-get update && sudo apt-get upgrade'
 
+# quick edit
+alias bashrc='nano ~/dotfiles/bash/bashrc'
+
+# reload the shell (i.e. invoke as a login shell)
+alias reload="exec $SHELL -l"
+
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
